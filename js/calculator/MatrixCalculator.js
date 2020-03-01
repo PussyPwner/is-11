@@ -15,7 +15,7 @@ class MatrixCalculator extends RealCalculator {
             for(let j=0; j<b.values[i].length;j++){
                 let S=0;
                 for(let k=0; k<a.values[i].length; k++){
-                    S=S+a.values[i][k]*b.values[k][j];    //a[k][i]*b[j][k] - це дал Трусов, но на паскале мы делали иначе, и всё работало, вроде как
+                    S=S+a.values[i][k]*b.values[k][j];    //a[k][i]*b[j][k] - вроде так
                 }
                 val.values[i][j]=S;
             }
