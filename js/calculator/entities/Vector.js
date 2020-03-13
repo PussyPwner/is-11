@@ -1,8 +1,6 @@
 ﻿class Vector {
-    constructor(values) {
-        this.values=[];
-        values.array.forEach(elem => {
-            this.values.push(elem);
-        });
+    constructor(values = []) {
+        this.values = [];
+        values.forEach(elem => this.values.push(elem));
     }
 }

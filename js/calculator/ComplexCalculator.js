@@ -1,7 +1,7 @@
 ﻿class ComplexCalculator extends RealCalculator {
 
     add(a, b) {
-        return new Complex(a.re - b.re, a.im - b.im);
+        return new Complex(a.re + b.re, a.im + b.im);
     }
 
     sub(a, b) {
@@ -17,7 +17,7 @@
     }
 
     module(a) {
-        return Math.sqrt(Math.pow(a.re, 2)+Math.pow(a.im, 2));
+        return Math.sqrt(Math.pow(a.re, 2) + Math.pow(a.im, 2));
     }
 
     one() {
@@ -35,7 +35,7 @@
     pow(a, n) {
         let c = this.one();
         for (let i=0; i < n; i++){
-            c = this.mult(c,a);
+            c = this.mult(c, a);
         }
         return new Complex(c.re, c.im);
     }
